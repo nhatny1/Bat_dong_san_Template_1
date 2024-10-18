@@ -1,7 +1,13 @@
 "use client";
 import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-const Counter = ({ end, label }) => {
+
+interface CounterProps {
+  end: number;
+  label: string;
+}
+
+const Counter: React.FC<CounterProps> = ({ end, label }) => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -33,8 +39,10 @@ const Counter = ({ end, label }) => {
     </div>
   );
 };
+
 Counter.propTypes = {
-  end: PropTypes.number.isRequired, // `end` phải là số và bắt buộc
-  label: PropTypes.string.isRequired, // `label` phải là chuỗi và bắt buộc
+  end: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
 };
+
 export default Counter;
