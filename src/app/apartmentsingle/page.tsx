@@ -1,6 +1,6 @@
 import ApmGallery from "../components/ApmGallery/page";
 import FollowUs from "../components/followus/followus";
-import Showcounter from "../components/Showcounter/page";
+
 import Single from "../components/Single/single";
 
 import styles from "../home.module.css";
@@ -41,8 +41,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-
-      <Showcounter />
 
       <div className="bg-bg-custom text-white">
         <h2 className="text-4xl text-center font-bold mb-2">Floor Plan</h2>

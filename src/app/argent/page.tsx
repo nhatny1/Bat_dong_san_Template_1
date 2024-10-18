@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import FollowUs from "../components/followus/followus";
-import Count from "../components/Count/page";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
@@ -8,34 +8,60 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import styles from "../home.module.css";
 import classNames from "classnames/bind";
-const cx = classNames.bind(styles)
+const cx = classNames.bind(styles);
 export default function Page() {
- 
-    return (<>
-        <div className="container bg-black max-w-full mx-auto flex flex-col md:flex-row items-center px-4 py-10">
-                <div className="image-container flex-1 text-center">
-                    <img src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Earth/Beauly%20-%20Single%20Property%20HTML%20Template/Template/assets/img/images/about-img-2.jpg" alt="Image" className="w-[518px] mx-auto" />
-                </div>
-                <div className="text-container flex-1 pl-0 md:pl-10 mt-6 md:mt-0">
-                    <div className="flex mb-5 items-center">
-                            <path fill="none" stroke="#c37f09" strokeLinecap="round" strokeLinejoin="round" strokeWidth="32" d="M80 212v236a16 16 0 0 0 16 16h96V328a24 24 0 0 1 24-24h80a24 24 0 0 1 24 24v136h96a16 16 0 0 0 16-16V212" />
-                            <path fill="none" stroke="#c37f09" strokeLinecap="round" strokeLinejoin="round" strokeWidth="51" d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69" />
-                        <h2 className="text-md text-lg text-yellow-300">Leading Real Estate Agent in The City</h2>
-                    </div>
-                    <h1 className="text-3xl text-white font-bold mt-2">Curtis Campher</h1>
-                    <p className="text-white text-xs mt-4 leading-relaxed">
-                    Quisque dignissim enim diam, eget pulvinar ex viverra id
-                    . Nulla a lobortis lectus, id volutpat magna. Morbi consequat porttitor fermentum.
-                    Nulla vestibulum tincidunt viverra. Vestibulum accumsan molestie lorem, non laoreet massa.
-                    Duis at dui sem. Vivamus ut gravida libero Quisque dignissim enim diam, eget pulvinar ex viverra id.
-                    Nulla a lobortisQuisdignissim enim diam, eget pulvinar ex viverra id. Nulla a lobortis lectus, id volutpat magna.
-                    Morbti consequat porttitor fermentum. Nulla vestibulum tincidunt
-                    </p>
-                    <img src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Earth/Beauly%20-%20Single%20Property%20HTML%20Template/Template/assets/img/icon/sign.png" className="inline-block mt-6 text-white py-3 px-6 rounded-lg transition duration-300" alt="Signature" />
-                </div>
+  return (
+    <>
+      <div className="container bg-black max-w-full mx-auto flex flex-col md:flex-row items-center px-4 py-10">
+        <div className="image-container flex-1 text-center">
+          <img
+            src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Earth/Beauly%20-%20Single%20Property%20HTML%20Template/Template/assets/img/images/about-img-2.jpg"
+            alt="Image"
+            className="w-[518px] mx-auto"
+          />
         </div>
-                <Count/> 
-         <div className="container w-full bg-bleck mx-auto p-10">
+        <div className="text-container flex-1 pl-0 md:pl-10 mt-6 md:mt-0">
+          <div className="flex mb-5 items-center">
+            <path
+              fill="none"
+              stroke="#c37f09"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="32"
+              d="M80 212v236a16 16 0 0 0 16 16h96V328a24 24 0 0 1 24-24h80a24 24 0 0 1 24 24v136h96a16 16 0 0 0 16-16V212"
+            />
+            <path
+              fill="none"
+              stroke="#c37f09"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="51"
+              d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256m368-77V64h-48v69"
+            />
+            <h2 className="text-md text-lg text-yellow-300">
+              Leading Real Estate Agent in The City
+            </h2>
+          </div>
+          <h1 className="text-3xl text-white font-bold mt-2">Curtis Campher</h1>
+          <p className="text-white text-xs mt-4 leading-relaxed">
+            Quisque dignissim enim diam, eget pulvinar ex viverra id . Nulla a
+            lobortis lectus, id volutpat magna. Morbi consequat porttitor
+            fermentum. Nulla vestibulum tincidunt viverra. Vestibulum accumsan
+            molestie lorem, non laoreet massa. Duis at dui sem. Vivamus ut
+            gravida libero Quisque dignissim enim diam, eget pulvinar ex viverra
+            id. Nulla a lobortisQuisdignissim enim diam, eget pulvinar ex
+            viverra id. Nulla a lobortis lectus, id volutpat magna. Morbti
+            consequat porttitor fermentum. Nulla vestibulum tincidunt
+          </p>
+          <img
+            src="https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Earth/Beauly%20-%20Single%20Property%20HTML%20Template/Template/assets/img/icon/sign.png"
+            className="inline-block mt-6 text-white py-3 px-6 rounded-lg transition duration-300"
+            alt="Signature"
+          />
+        </div>
+      </div>
+
+      <div className="container w-full bg-bleck mx-auto p-10">
         <div className={cx("title-boxApartment", "mb-5")}>
           <div className={cx("text-white", "text-6xl", "lg:text-4xl", "mb-3")}>
             Choose An Apartment
@@ -53,8 +79,7 @@ export default function Page() {
               "lg:justify-between",
               "flex-wrap",
               "gap-1"
-            )}
-          >
+            )}>
             <div className={cx("Apartment-item", "mb-3")}>
               <div className={cx("image", "w-full")}>
                 <img
@@ -70,8 +95,7 @@ export default function Page() {
                     "text-2xl",
                     "lg:text-lg",
                     "pb-3"
-                  )}
-                >
+                  )}>
                   Futuristic House
                 </h3>
                 <ul className={cx("flex", "gap-4")}>
@@ -82,8 +106,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="material-symbols-light:bed-outline"
                       className={cx("icon-svg", "w-5", "h-5")}
@@ -97,8 +120,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="ph:bathtub"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -112,8 +134,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="lineicons:full-screen"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -135,8 +156,7 @@ export default function Page() {
                   "py-1",
                   "text-white",
                   "text-sm"
-                )}
-              >
+                )}>
                 New
               </div>
               <div className={cx("image", "w-full")}>
@@ -153,8 +173,7 @@ export default function Page() {
                     "text-2xl",
                     "lg:text-lg",
                     "pb-3"
-                  )}
-                >
+                  )}>
                   Duplex Apartment
                 </h3>
                 <ul className={cx("flex", "gap-4")}>
@@ -165,8 +184,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="material-symbols-light:bed-outline"
                       className={cx("icon-svg", "w-5", "h-5")}
@@ -180,8 +198,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="ph:bathtub"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -195,8 +212,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="lineicons:full-screen"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -221,8 +237,7 @@ export default function Page() {
                     "text-2xl",
                     "lg:text-lg",
                     "pb-3"
-                  )}
-                >
+                  )}>
                   Modern House
                 </h3>
                 <ul className={cx("flex", "gap-4")}>
@@ -233,8 +248,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="material-symbols-light:bed-outline"
                       className={cx("icon-svg", "w-5", "h-5")}
@@ -248,8 +262,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="ph:bathtub"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -263,8 +276,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="lineicons:full-screen"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -289,8 +301,7 @@ export default function Page() {
                     "text-2xl",
                     "lg:text-lg",
                     "pb-3"
-                  )}
-                >
+                  )}>
                   Luxury Apartments
                 </h3>
                 <ul className={cx("flex", "gap-4")}>
@@ -301,8 +312,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="material-symbols-light:bed-outline"
                       className={cx("icon-svg", "w-5", "h-5")}
@@ -316,8 +326,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="ph:bathtub"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -331,8 +340,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="lineicons:full-screen"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -357,8 +365,7 @@ export default function Page() {
                     "text-2xl",
                     "lg:text-lg",
                     "pb-3"
-                  )}
-                >
+                  )}>
                   Apartment Block
                 </h3>
                 <ul className={cx("flex", "gap-4")}>
@@ -369,8 +376,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="material-symbols-light:bed-outline"
                       className={cx("icon-svg", "w-5", "h-5")}
@@ -384,8 +390,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="ph:bathtub"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -399,8 +404,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="lineicons:full-screen"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -425,8 +429,7 @@ export default function Page() {
                     "text-2xl",
                     "lg:text-lg",
                     "pb-3"
-                  )}
-                >
+                  )}>
                   South Complex
                 </h3>
                 <ul className={cx("flex", "gap-4")}>
@@ -437,8 +440,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="material-symbols-light:bed-outline"
                       className={cx("icon-svg", "w-5", "h-5")}
@@ -452,8 +454,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="ph:bathtub"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -467,8 +468,7 @@ export default function Page() {
                       "gap-1",
                       "color-sub",
                       "text-xs"
-                    )}
-                  >
+                    )}>
                     <Icon
                       icon="lineicons:full-screen"
                       className={cx("icon-svg", "w-4", "h-4")}
@@ -482,15 +482,14 @@ export default function Page() {
         </div>
       </div>
       {/* {icon} */}
-       <div className={cx("box-color", "w-full", "py-16")}>
+      <div className={cx("box-color", "w-full", "py-16")}>
         <div
           className={cx(
             "max-w-screen-xl mx-auto p-4",
             "flex",
             "flex-wrap",
             "justify-between"
-          )}
-        >
+          )}>
           <div
             className={cx(
               "sub",
@@ -502,8 +501,7 @@ export default function Page() {
               "gap-3",
               "pl-2",
               "mb-3"
-            )}
-          >
+            )}>
             <div className={cx("title", "text-lg")}>Apartments Amenities</div>
             <div className={cx("highlight", "w-10/12", "mb-1")}>
               Outstanding way of luxury life
@@ -522,8 +520,7 @@ export default function Page() {
                 "px-5", // Giảm padding
                 "text-white",
                 "w-2/5"
-              )}
-            >
+              )}>
               Schedule a Visit
               <FontAwesomeIcon icon={faArrowRight} className={cx("w-3")} />
             </Link>
@@ -540,8 +537,7 @@ export default function Page() {
               "gap-4",
               "px-2",
               "mb-4"
-            )}
-          >
+            )}>
             <div
               className={cx(
                 "flex",
@@ -550,8 +546,7 @@ export default function Page() {
                 "gap-4",
                 "py-9",
                 "px-4"
-              )}
-            >
+              )}>
               <div className={cx("icon")}>
                 <Icon
                   icon="solar:home-outline"
@@ -565,8 +560,7 @@ export default function Page() {
                   "lg:text-lg",
                   "text-white",
                   "font-medium"
-                )}
-              >
+                )}>
                 Smart Homes
               </div>
               <div
@@ -576,8 +570,7 @@ export default function Page() {
                   "text-lg",
                   "lg:text-xs",
                   "text-center"
-                )}
-              >
+                )}>
                 Immigration advisory visa a foundation was establishe with a
                 ideaImmigration advisory visa a foundation
               </div>
@@ -595,8 +588,7 @@ export default function Page() {
               "gap-4",
               "px-2",
               "mb-4"
-            )}
-          >
+            )}>
             <div
               className={cx(
                 "flex",
@@ -605,8 +597,7 @@ export default function Page() {
                 "gap-4",
                 "py-9",
                 "px-4"
-              )}
-            >
+              )}>
               <div className={cx("icon")}>
                 <Icon
                   icon="weui:location-outlined"
@@ -620,8 +611,7 @@ export default function Page() {
                   "lg:text-lg",
                   "text-white",
                   "font-medium"
-                )}
-              >
+                )}>
                 Atractive Location
               </div>
               <div
@@ -631,8 +621,7 @@ export default function Page() {
                   "text-lg",
                   "lg:text-xs",
                   "text-center"
-                )}
-              >
+                )}>
                 Immigration advisory visa a foundation was establishe with a
                 ideaImmigration advisory visa a foundation
               </div>
@@ -650,8 +639,7 @@ export default function Page() {
               "gap-4",
               "px-2",
               "mb-4"
-            )}
-          >
+            )}>
             <div
               className={cx(
                 "flex",
@@ -660,8 +648,7 @@ export default function Page() {
                 "gap-4",
                 "py-9",
                 "px-4"
-              )}
-            >
+              )}>
               <div className={cx("icon")}>
                 <Icon
                   icon="mingcute:swimming-pool-line"
@@ -675,8 +662,7 @@ export default function Page() {
                   "lg:text-lg",
                   "text-white",
                   "font-medium"
-                )}
-              >
+                )}>
                 Swimming Pool
               </div>
               <div
@@ -686,8 +672,7 @@ export default function Page() {
                   "text-lg",
                   "lg:text-xs",
                   "text-center"
-                )}
-              >
+                )}>
                 Immigration advisory visa a foundation was establishe with a
                 ideaImmigration advisory visa a foundation
               </div>
@@ -705,8 +690,7 @@ export default function Page() {
               "gap-4",
               "px-2",
               "mb-4"
-            )}
-          >
+            )}>
             <div
               className={cx(
                 "flex",
@@ -715,8 +699,7 @@ export default function Page() {
                 "gap-4",
                 "py-9",
                 "px-4"
-              )}
-            >
+              )}>
               <div className={cx("icon")}>
                 <Icon
                   icon="streamline:wifi-router"
@@ -730,8 +713,7 @@ export default function Page() {
                   "lg:text-lg",
                   "text-white",
                   "font-medium"
-                )}
-              >
+                )}>
                 Fast Speed WI-FI
               </div>
               <div
@@ -741,8 +723,7 @@ export default function Page() {
                   "text-lg",
                   "lg:text-xs",
                   "text-center"
-                )}
-              >
+                )}>
                 Immigration advisory visa a foundation was establishe with a
                 ideaImmigration advisory visa a foundation
               </div>
@@ -760,8 +741,7 @@ export default function Page() {
               "gap-4",
               "px-2",
               "mb-4"
-            )}
-          >
+            )}>
             <div
               className={cx(
                 "flex",
@@ -770,8 +750,7 @@ export default function Page() {
                 "gap-4",
                 "py-9",
                 "px-4"
-              )}
-            >
+              )}>
               <div className={cx("icon")}>
                 <Icon
                   icon="ion:car-sport-outline"
@@ -785,8 +764,7 @@ export default function Page() {
                   "lg:text-lg",
                   "text-white",
                   "font-medium"
-                )}
-              >
+                )}>
                 Parking Space
               </div>
               <div
@@ -796,8 +774,7 @@ export default function Page() {
                   "text-lg",
                   "lg:text-xs",
                   "text-center"
-                )}
-              >
+                )}>
                 Immigration advisory visa a foundation was establishe with a
                 ideaImmigration advisory visa a foundation
               </div>
@@ -815,8 +792,7 @@ export default function Page() {
               "gap-4",
               "px-2",
               "mb-4"
-            )}
-          >
+            )}>
             <div
               className={cx(
                 "flex",
@@ -825,8 +801,7 @@ export default function Page() {
                 "gap-4",
                 "py-9",
                 "px-4"
-              )}
-            >
+              )}>
               <div className={cx("icon")}>
                 <Icon
                   icon="circum:dumbbell"
@@ -840,8 +815,7 @@ export default function Page() {
                   "lg:text-lg",
                   "text-white",
                   "font-medium"
-                )}
-              >
+                )}>
                 Fitness Center
               </div>
               <div
@@ -851,8 +825,7 @@ export default function Page() {
                   "text-lg",
                   "lg:text-xs",
                   "text-center"
-                )}
-              >
+                )}>
                 Immigration advisory visa a foundation was establishe with a
                 ideaImmigration advisory visa a foundation
               </div>
@@ -860,7 +833,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-            {/*form điền thông tin */}
+      {/*form điền thông tin */}
       <div className={cx("contact")}>
         <div
           className={cx(
@@ -964,9 +937,9 @@ export default function Page() {
             Submit Request
           </button>
         </div>
-      </div> 
-            {/* Follow Us Section */}
-                <FollowUs />
-        </>
-    );
+      </div>
+      {/* Follow Us Section */}
+      <FollowUs />
+    </>
+  );
 }
