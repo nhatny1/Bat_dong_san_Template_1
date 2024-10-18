@@ -1,12 +1,5 @@
 import FollowUs from "../components/followus/followus";
-import classNames from "classnames/bind";
-import styles from "../home.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons/faLocationDot";
-import Link from "next/link";
-import { Icon } from "@iconify/react/dist/iconify.js";
-const cx = classNames.bind(styles);
+
 // Import Swiper React components
 import SlideShow from "./components/slideshow";
 export default function Neighbourhood() {
