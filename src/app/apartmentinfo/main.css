@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Old+Standard+TT:wght@400;700&display=swap");
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+p {
+    font-family: 'Jost', sans-serif;
+}
+
+.apartment-info-item .right-item .right-title {
+    font-family: 'Jost', sans-serif;
+}
+
+h2 {
+    font-family: 'Old Standard TT', serif;
+}
+
+h3 {
+    font-family: 'Old Standard TT', serif;
+  
+}
+
+.apartment-info-item .right-item .right-title {
+    font-family: 'Jost', sans-serif;
+}
+
+.apartment-info-list {
+    padding-top: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.apartment-info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apartment-info-item .left-item h2 {
+    color: #bd8c62;
+    font-size: 1.875rem; 
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.apartment-info-item .left-item h3 {
+    color: #ddd;
+    font-size: 1.125rem; 
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.apartment-info-item .info-icon img {
+    width: 1rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+.apartment-info-item .info-icon span {
+    color: #fff;
+    font-size: 0.875rem; 
+}
+
+.apartment-info-item ul {
+    color: #fff;
+    font-size: 0.875rem; 
+}
+
+.apartment-info-item .mid-item img {
+    max-width: 100%;
+}
+
+.apartment-info-item .right-item h2 {
+    color: #fff;
+    font-size: 1.5rem; 
+    font-family: 'Jost', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .apartment-info-item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .apartment-info-item .left-item h2 {
+        font-size: 2.25rem; 
+    }
+
+    .apartment-info-item .left-item h3 {
+        font-size: 1.25rem; 
+    }
+
+    .apartment-info-item .info-icon img {
+        width: 1rem;
+        height: 1.25rem;
+    }
+
+    .apartment-info-item .info-icon span {
+        font-size: 0.875rem; 
+    }
+
+    .apartment-info-item ul {
+        font-size: 0.875rem;
+    }
+
+    .apartment-info-item .mid-item img {
+        max-width: 330px;
+    }
+
+    .apartment-info-item .right-item h2 {
+        font-size: 1.875rem; 
+    }
+}
+
+@media (max-width: 767px) {
+    .apartment-info-item .left-item h2 {
+        font-size: 2.5rem; 
+    }
+
+    .apartment-info-item .left-item h3 {
+        font-size: 1.5rem; 
+    }
+
+    .apartment-info-item .info-icon span {
+        font-size: 1.25rem; 
+    }
+
+    .apartment-info-item ul {
+        font-size: 1.25rem; 
+    }
+
+    .apartment-info-item .right-item h2 {
+        font-size: 2rem; 
+    }
+}

@@ -1,0 +1,67 @@
+.team-social {
+    position: absolute;
+    top: 420px;
+    left: 50%;
+    transform: translateX(-50%) translateY(50px); /* Positioned 50px upwards */
+    gap: 10px;
+    opacity: 0; /* Initially hidden */
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Centers the icons */
+}
+
+.team-item {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.team-item:hover .team-social {
+    opacity: 1; /* Visible when hovered */
+    visibility: visible;
+    transform: translateX(-50%) translateY(0); /* Moves icons up on hover */
+}
+.team-item:hover {
+    background-color: #bd8c62; /* Change background color on hover */
+}
+
+.team-social a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #bd8c62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px); /* Start icons lower */
+}
+
+.team-item:hover .team-social a {
+    opacity: 1; /* Fade in on hover */
+    transform: translateY(0); /* Move up to position */
+}
+
+.team-social a:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.team-social a:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.team-social a:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.team-social a:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.team-social a:hover {
+    background-color: #bd8c62; /* Color change on hover */
+    color: white;
+}

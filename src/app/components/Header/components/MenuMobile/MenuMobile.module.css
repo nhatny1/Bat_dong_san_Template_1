@@ -1,0 +1,122 @@
+.mobile-size-menu{
+  background-color: #1a1b1d;
+  overflow-y: scroll ;
+  width: 33rem;
+  animation: showSibar 0.2s ease-in-out forwards;
+}
+.wrapper{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.content{
+
+}
+
+.content .close{
+  border: 1px solid var(--primary-color);
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+.content .box-rearch .btn-search{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+
+.content .menu-header-mobile li:not(:last-child){
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+  margin-bottom: 10px ;
+  
+}
+
+/*  */
+
+.content .menu-header-mobile li .menu-child  {
+  display: none; /* Đặt chiều cao tối đa khi mở (thay đổi theo nội dung) */
+}
+
+.content .menu-header-mobile li .menu-child li  {
+  padding: 7px 0; /* Đặt chiều cao tối đa khi mở (thay đổi theo nội dung) */
+}
+
+.content .menu-header-mobile li:hover .menu-child  {
+  display: block; /* Đặt chiều cao tối đa khi mở (thay đổi theo nội dung) */
+  /* animation: DropDown 0.5s ease-in both; */
+}
+
+.content .description{
+  font-size: 0.8rem;
+  color: #cfcfcf;
+}
+
+
+.content .box-social .social-item .box-icon{
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+.content .box-social .social-item .info{
+  
+  color: #cfcfcf;
+}
+
+.social{
+margin-top: 20px;
+}
+
+.social .social-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  /* background: var(--primary-color); */
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 3px;
+  border: 1px solid var(--primary-color);
+}
+.social .social-item .icon{
+color: var(--primary-color);
+}
+
+.social .social-item:hover{
+  background: var(--primary-color);
+
+}
+
+.social .social-item:hover .icon{
+  color: #fff;
+
+}
+
+
+@keyframes DropDown{
+  0%{
+    height: 0;
+      opacity: 0;
+    /* transform: translateY(-50%); */
+  }
+  100%{
+    height: auto;
+    opacity: 1;
+
+    /* transform: translateY(0); */
+
+  }
+}
+
+@keyframes showSibar{
+  0%{
+   right: -100%;
+    /* transform: translateY(-50%); */
+  }
+  100%{
+    right: 0;
+
+    /* transform: translateY(0); */
+
+  }
+}
+
+
+

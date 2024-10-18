@@ -1,0 +1,81 @@
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 0.5s;
+}
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+
+.apartment-info-list {
+  background-color: #1a1b1d;
+}
+
+.apartment-info-list h2 {
+  font-size: 1.875rem; 
+}
+.apartment-info-list p {
+  font-size: 0.875rem; 
+}
+
+.plan-tab button {
+  font-size: 0.875rem; 
+}
+
+.tab-content ul li h3 {
+  font-size: 0.875rem; 
+}
+
+.tab-content .plan-thumb img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .apartment-info-list h2 {
+      font-size: 3.125rem; 
+  }
+
+  .apartment-info-list p {
+      font-size: 1rem; 
+  }
+
+  .plan-tab button {
+      font-size: 1rem; 
+  }
+
+  .tab-content ul li h3 {
+      font-size: 1rem; 
+  }
+
+  .tab-content .plan-thumb img {
+      width: 587px;
+      height: 557px;
+  }
+}
+
+@media (max-width: 767px) {
+  .apartment-info-list h2 {
+      font-size: 2.5rem; 
+  }
+
+  .apartment-info-list p {
+      font-size: 1.25rem; 
+  }
+
+  .plan-tab button {
+      font-size: 1.25rem; 
+  }
+
+  .tab-content ul li h3 {
+      font-size: 1.25rem; 
+  }
+}

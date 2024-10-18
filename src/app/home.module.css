@@ -1,0 +1,284 @@
+.wrapper{
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+.box-color{
+  background-color: #2b2c30;
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+}
+.banner-left{
+  background-color: #2b2c30;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.banner-left .top-content{
+  display: flex;
+  gap: 1rem;
+}
+
+.banner-left .top-content .item{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.banner-left .top-content .item .icon{
+  color: var(--primary-color);
+}
+
+.banner-left .mid-content{
+  margin: 1rem 0;
+}
+
+.banner-left .mid-content h2{
+  font-size: 3rem;
+  line-height: 2.9rem;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.banner-left .mid-content p{
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.banner-left .bottom-content{
+ position: absolute;
+ left: 0;
+ bottom: 0;
+ padding: 1rem;
+ background-color: var(--primary-color);
+ color: #fff;
+}
+
+.banner-right{
+  flex-basis: 50%;
+  background-color: aqua;
+  background-image: url("https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Earth/Beauly%20-%20Single%20Property%20HTML%20Template/Template/assets/img/bg-img/hero-bg-2.jpg") ;
+  position: relative;
+}
+
+.box-size{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 330px;
+  
+  font-size: 1.3rem;
+}
+
+.size{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #bcbcbc;
+  font-size: 1.1rem;
+  padding: 5px;
+
+}
+
+.title-boxApartment{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-boxApartment h2{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.title-boxApartment p{
+  display: block;
+  color: #fff;
+  max-width: 620px;
+  font-size: 1.3rem;
+  
+}
+
+@media(min-width:1028px){
+  .title-boxApartment p{
+    font-size: 0.8rem;
+  }
+}
+
+.Apartment-item{
+  width: fit-content;
+  background-color: #2b2c30;
+}
+
+
+.Apartment-item .box-new{
+  background-color: var(--primary-color);
+}
+@media(min-width:1028px){
+  .Apartment-item{
+    width: 32%;
+    
+  }
+}
+
+.Apartment-item .image{
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+.Apartment-item .image img{
+  transition: all 0.2s ease-in-out;
+
+}
+.Apartment-item .image:hover img{
+  transform: scale(1.1);
+}
+
+.sub .title{
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.sub .highlight{
+  color: #fff;
+  font-size:2.7rem ;
+  line-height: 3rem;
+  
+}
+.sub-content{
+  border: 1px solid var(--primary-color);
+}
+
+.btn-header{
+  background-color: var(--primary-color);
+}
+
+.sub-item .text-sub{
+/* font-size: 0.6rem; */
+}
+
+
+@media(min-width:1028px){
+  .sub-item .text-sub{
+    font-size: 0.6rem;
+    }
+    
+}
+.icon-svg {
+  color: var(--primary-color);
+  transition: transform 1s; /* Thời gian lật */
+  transform-style: preserve-3d; /* Bảo quản không gian 3D */
+}
+
+.icon:hover .icon-svg {
+  transform: rotateY(360deg); /* Quay 180 độ quanh trục Y khi hover */
+}
+
+
+.gallery .gallery-top .gallery-title {
+  font-size: 2.6rem;}
+
+.gallery .gallery-top .gallery-title span {
+  font-size: 0.8rem;
+  color: #cfcfcf;
+
+}
+
+.state-box span{
+  color: #fff;
+}
+
+.choose{
+  text-decoration:line-through ;
+  color: var(--primary-color) !important;
+}
+
+
+
+.contact .descript{
+  font-size: 0.8rem;
+  color: #cfcfcf;
+}
+
+
+.contact-form input{
+  height: 56px;
+  background-color: #0e1013;
+  border: 1px solid rgba(189, 140, 98, 0.3);
+  padding: 5px  15px;
+  font-size: 0.7rem;
+  color: #fff;
+  outline: none;
+}
+
+.contact-form textarea{
+  height: 120px;
+  background-color: #0e1013;
+  border: 1px solid rgba(189, 140, 98, 0.3);
+  padding: 15px  15px;
+  font-size: 0.7rem;
+  color: #fff;
+  outline: none;
+
+
+}
+
+.contact-form button{
+ background-color: var(--primary-color);
+}
+
+
+.table-list{
+  font-size: 0.8rem;
+}
+
+.table-list  tbody tr{
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.table-list  tbody tr:not(:last-child){
+  border-bottom: 1px solid rgba(189, 140, 98, 0.3);
+}
+
+.table-list  tbody tr:hover{
+  color: var(--primary-color);
+}
+
+
+.table-list  tbody tr a{
+  color: var(--primary-color);
+}
+
+.header-table{
+  background-color: var(--primary-color);
+}
+
+.post-content{
+  background-color: #2b2c30;
+}
+
+
+.post-content .post-meta ul li a{
+  transition: all 0.3s ease-in-out;
+}
+.post-content .post-meta ul li a:hover{
+  color: var(--primary-color);
+}

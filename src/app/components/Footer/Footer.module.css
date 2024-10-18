@@ -1,0 +1,124 @@
+.box-footer{
+  background-color: #1a1b1d;
+  background-image: url(https://template-intern.l5elb4sxvvqkvl.flashvps.xyz/Earth/Beauly%20-%20Single%20Property%20HTML%20Template/Template/assets/img/bg-img/bg-footer-1.png);
+  background-position: left top; /* Đặt hình nền ở giữa chiều ngang và trên cùng chiều dọc */
+  background-repeat: no-repeat; /* Không lặp lại hình nền */
+  background-size:  100% ;
+  min-height: 546px;
+}
+
+@media (min-width: 1280px) {
+  .box-footer{
+    height: 546px;
+    
+  }
+}
+
+.primary-footer{
+  height: 100% !important;
+}
+
+@media (min-width: 1028px){
+  .box-footer{
+    background-position: left top; /* Đặt hình nền ở giữa chiều ngang và trên cùng chiều dọc */
+    background-repeat: no-repeat; /* Không lặp lại hình nền */
+    background-size:  927px 100%;
+  }
+}
+.social{
+  margin-top: 20px;
+  }
+  
+  .social .social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    /* background: var(--primary-color); */
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    border: 1px solid var(--primary-color);
+  }
+  .social .social-item .icon{
+  color: var(--primary-color);
+  }
+  
+  .social .social-item:hover{
+    background: var(--primary-color);
+  
+  }
+  
+  .social .social-item:hover .icon{
+    color: #fff;
+  
+  }
+
+.input-newsletter{
+  background-color: transparent;
+}
+
+.button-newsletter{
+  background-color: var(--primary-color);
+}
+
+.bottom-footer{
+  font-size: 0.7rem !important;
+}
+
+
+.social{
+  margin-top: 20px;
+  }
+  
+  .social .social-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    /* background: var(--primary-color); */
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 3px;
+    border: 1px solid var(--primary-color);
+  }
+  .social .social-item .icon{
+  color: var(--primary-color);
+  }
+  
+  .social .social-item:hover{
+    background: var(--primary-color);
+  
+  }
+  
+  .social .social-item:hover .icon{
+    color: #fff;
+  
+  }
+
+
+
+  .list-group li{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .list-group li:hover{
+    color: var(--primary-color);
+  }
+
+  .icon-svg{
+    color: var(--primary-color);
+  }
+  
+
+  .box-footer input{
+    background-color: transparent;
+    border: 1px solid rgba(189, 140, 98, 0.3);
+    color: var(--primary-color);
+    font-size: 0.6rem;
+  }
+
+  .btn-submit{
+    background-color: var(--primary-color);
+  }
